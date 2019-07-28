@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etNomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seu produto" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cores"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/cbBranco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branco"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbVermelho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vermelho"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponivel em estoque" />
+
+    <RadioGroup
+        android:id="@+id/rgEstoq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sim" />
+
+        <RadioButton
+            android:id="@+id/rbNao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Não" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resultado" />
+</LinearLayout>
